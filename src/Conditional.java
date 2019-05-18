@@ -28,5 +28,7 @@ public class Conditional {
                 System.out.println("Alien!");
                 break;
         }
+
+        System.out.println(test == 10 ? "Ten!" : "Not Ten.");
     }
 }
