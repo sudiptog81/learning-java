@@ -6,37 +6,40 @@
  *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package pro.ghosh.sudipto.javatutorial.misc;
+package pro.ghosh.sudipto.javatutorial.classes;
 
-import java.util.Scanner;
+public class Student {
+    private int id;
+    private int age;
+    private String name;
 
-public class Conditional {
-    public static void main(String[] args) {
-        int test = new Scanner(System.in).nextInt();
+    Student(int id, String name, int  age) {
+        set_id(id);
+        set_name(name);
+        set_age(age);
+    }
 
-        if (test == 9 || test == 6) {
-            System.out.println("Yes!");
-        } else if (test < 9 && test >= 0) {
-            System.out.println("No!");
-        } else {
-            System.out.println("Else!");
-        }
+    private int get_id() {
+        return this.id;
+    }
 
-        switch (test) {
-            case 1:
-                System.out.println("Crawl");
-                break;
-            case 2:
-                System.out.println("Talk");
-                break;
-            case 3:
-                System.out.println("Trouble");
-                break;
-            default:
-                System.out.println("Alien!");
-                break;
-        }
+    private void set_id(int id) {
+        this.id = id;
+    }
 
-        System.out.println(test == 10 ? "Ten!" : "Not Ten.");
+    public String get_name() {
+        return this.name;
+    }
+
+    private void set_name(String _name) {
+        this.name = _name;
+    }
+
+    public int get_age() {
+        return this.age;
+    }
+
+    private void set_age(int age) {
+        this.age = age;
     }
 }

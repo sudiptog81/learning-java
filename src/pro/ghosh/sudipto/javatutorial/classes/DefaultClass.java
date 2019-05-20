@@ -17,7 +17,16 @@ public class DefaultClass {
         Function dumbFunction = new Function("Dumb Function");
         dumbFunction.greet();
 
-        AwesomeClass awesome = new AwesomeClass("Message");
+        Awesome awesome = new Awesome("Message");
         awesome.main(null);
+
+        Student john = new Student(1, "John Doe", 16);
+        Student zeba = new Student(2, "Zeba Khan", 18);
+        Student[] studentArr = {john, zeba};
+        System.out.println("   Name   |   Age");
+        System.out.println("---------------------");
+        for (Student student: studentArr) {
+            System.out.println(student.get_name() + "  |  " + student.get_age());
+        }
     }
 }

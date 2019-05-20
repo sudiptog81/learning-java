@@ -8,18 +8,18 @@
 
 package pro.ghosh.sudipto.javatutorial.classes;
 
-class AwesomeClass {
-    private String _msg;
+class Awesome {
+    private String msg;
     private String getMsg() {
-        return _msg;
+        return this.msg;
     }
     private void setMsg(String msg) {
-        _msg = msg;
+        this.msg = msg;
     }
-    AwesomeClass(String msg) {
+    Awesome(String msg) {
         setMsg(msg.toUpperCase());
     }
     void main(String[] args) {
-        System.out.print(getMsg());
+        System.out.println(getMsg());
     }
 }

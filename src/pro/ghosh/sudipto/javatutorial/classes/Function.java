@@ -23,11 +23,11 @@ class Function {
         _name = name;
     }
 
-    public void simpleMethod() {
+    void simpleMethod() {
         System.out.println("This is an instance of Function class");
     }
 
-    public void greet() {
+    void greet() {
         System.out.println("Hello " + getName() + "!");
     }
 }
